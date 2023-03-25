@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Hora</title>
+</head>
+<body>
+    <input type="number" name="hora" id="hora">
+    <input type="button" value="Verificar" onclick="verifica()">
+
+    <script>
+        function verifica() {
+            var hora = window.document.getElementById('hora')
+            var horas = Number(hora.value)
+            if (horas < 12) {
+            window.alert('Bom dia !!!')
+            } else if (horas < 18) {
+                window.alert('Boa tarde !!!')
+            } else {
+                window.alert('Boa noite !!!')
+            }
+            
+        }
+    </script>
+
+    
+</body>
+</html>
