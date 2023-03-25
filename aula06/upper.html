@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformar letras</title>
+</head>
+<body>
+
+    <h1>Transformar caracteres para minúsculas</h1>
+    <div id="div1">
+        <textarea name="texto" id="input" cols="50" rows="10" placeholder="Digite o texto a ser modificado..."></textarea>
+    </div>
+    <div id="div2">
+        <textarea name="texto2" id="output" cols="50" rows="10" placeholder="Aqui ficará o resultado.."></textarea>
+    </div>
+
+    <script>
+    const input = document.getElementById("input");
+    const output = document.getElementById("output");
+    input.addEventListener("input", function() {
+    output.value = input.value.toLowerCase();    
+    })
+     </script>
+    
+</body>
+</html>

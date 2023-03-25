@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voto</title>
+    <style>
+        body {
+            margin: auto;
+            margin: 20px;
+            text-align: center;
+        }
+        input#entrada {
+            width: 55px;
+        }
+        div#res {
+            margin-top: 10px
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="number" id="entrada" placeholder="Idade">
+    <input type="button" value="Verificar" onclick="verifica()">
+    <div id="res"></div>
+
+    <script>
+        function verifica() {
+            var entrada = window.document.getElementById('entrada')
+            var voto = Number(entrada.value)
+            var resul = window.document.getElementById('res')
+            resul.innerText = (`Sua idade é ${voto}`)
+            if (voto < 16) {
+                window.alert('Não vota')
+            } else if (voto < 18 || voto > 65) {
+                window.alert('Voto Opcional')
+            } else {
+                window.alert('VOTO OBRIGATÓRIO')
+            }
+        }
+    </script>    
+</body>
+</html>
