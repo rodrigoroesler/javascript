@@ -7,19 +7,21 @@
     <title>Javascript - Hora</title>
 </head>
 <body>
-    <input type="number" name="hora" id="hora">
     <input type="button" value="Verificar" onclick="verifica()">
+    <div id="res"></div>
     <script>
         function verifica() {
-            var hora = window.document.getElementById('hora')
-            var horas = Number(hora.value)
-            if (horas < 12) {
-            window.alert('Bom dia !!!')
-            } else if (horas < 18) {
+            var agora = new Date()
+            var hora = agora.getHours()
+            var minutes = agora.getMinutes()
+            res.innerHTML = (`<p>Agora são ${hora} hora(s) e ${minutes} minuto(s)</p>`)
+            if (hora < 12) {
+                window.alert('Bom dia !!!')
+            } else if (hora < 18) {
                 window.alert('Boa tarde !!!')
-            } else {
-                window.alert('Boa noite !!!')
-            }            
+            } else  {
+            window.alert ('Boa noite !!!')
+            }
         }
     </script>    
 </body>

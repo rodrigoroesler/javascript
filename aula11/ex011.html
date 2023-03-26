@@ -16,7 +16,6 @@
     <input type="text" name="txtpais" id="txtpais">
     <input type="button" value="Verificar" onclick="verifique()">
     <div id="resultado"></div>
-
     <script>
         function verifique() {
             var pais = window.document.getElementById('txtpais')
@@ -25,13 +24,8 @@
                 resultado.innerHTML = `Voce digitou ${rel}, portanto voce é brasileiro`
                 } else {
                     resultado.innerHTML = `Voce digitou ${rel}, portanto voce é estrangeiro`
-
                 }
-
-        }
-       
-
-    </script>
-    
+        }       
+    </script>    
 </body>
 </html>
