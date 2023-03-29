@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(235, 178, 178);
+    background-color: rgb(81, 148, 224);
     font-family: 'Courier New', Courier, monospace;
 
 }
@@ -10,21 +10,19 @@ section {
     background-color: #ffffff;
     border-radius: 10px;
     margin: auto;
-    width: 40%;
-    height: 250px;
+    width: 55%;
+    height: 500px;
     padding: 20px;
     text-align: center;
     box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.336);
 }
 select#flista {
     width: 250px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
 }
-
-
-
 footer {
     font: black;
     text-align: center;
     color: #ffffff;
-
 }
