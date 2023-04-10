@@ -10,6 +10,25 @@ form.addEventListener('submit', function(event) {
 
     const value = document.getElementById('value');
     let description = '';
+    value.classList.add('attention')
 
     document.getElementById('infos').classList.remove('hidden');
+    if (bmi  < 18.5) {
+        description = "Cuidado! Voce está abaixo do peso."
+    } else if (bmi >= 18.5 && bmi <= 25) {
+        description = "Parabéns! Voce está o peso ideal."
+        value.classList.remove('attention')
+        value.classList.add('normal')
+    } else if (bmi > 25 & bmi <= 30) {
+        description = "Cuidado! Voce esá com sobrepeso."
+    } else if (bmi > 30 && bmi <= 35) {
+        description = "Cuidado! Voce está com obesidade moderada."
+    } else if (bmi > 35 && bmi <=40) {
+        description = "Cuidado! Voce está com obesidade severa."
+    } else {
+        description = "CUIDADO! Voce está com obesidade mórbida"
+    }
+
+    value.textContent = bmi;
+    document.getElementById('description').textContent = description;
 });

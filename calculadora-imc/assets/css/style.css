@@ -50,7 +50,7 @@ body {
     border-radius: 5px;
 }
 
-#input-box label {
+.input-box label {
     font-size: 1.1rem;
     color: #fff;
     font-weight: 400;
@@ -120,6 +120,7 @@ body {
 }
 #description {
     width: 15.5rem;
+    font-size: 0.8rem;
 }
 #more-info {
     border-top: 1px solid #ffffff30;
@@ -139,4 +140,10 @@ body {
 }
 .hidden {
     display: none;
+}
+.normal {
+    color: green;
+}
+.attention {
+    color: red;
 }
